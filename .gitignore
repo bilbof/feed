@@ -1,0 +1,6 @@
+tmp
+.sass-cache
+.jekyll-metadata
+config/secrets.yml
+config/nginx-config
+log/

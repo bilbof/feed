@@ -1,0 +1,16 @@
+<div class="followed-feeds">
+  <h2 class="post-list-heading">Feeds I follow</h2>
+  <p>A collection of recent articles from blogs that I follow.</p>
+  <ul class="post-list">
+    <% for entry in feed[:entries] %>
+      <li>
+        <p>
+          <a class="post-link" href="<%= entry[:link] %>"><%= entry[:title] %></a>
+          <span class="post-meta"><%= entry[:date_formatted] %> - <%= entry[:source] %></span>
+        </p>
+        <span class="post-meta"></span>
+        <p><%= entry[:summary] %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>
