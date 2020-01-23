@@ -47,7 +47,10 @@ set :whenever_command, "bundle exec whenever"
 
 # before 'deploy:started', 'deploy:update_jekyll'
 
-# TODO: set up app deploy script...
+# TODO: lots of cleaning up to do
+# TODO: nginx proxying to app.
+# TODO: ETags? https://info.varnish-software.com/blog/systematic-content-validation-with-varnish
+
 namespace :deploy do
   desc "Check that we can access everything"
   task :check_write_permissions do
@@ -69,9 +72,9 @@ namespace :deploy do
     end
   end
 
+  desc "Start application"
   task :start do
     on roles(:app) do
-      puts "Starting application"
       invoke "deploy:export_systemctl"
       execute "sudo systemctl start #{fetch(:foreman_app)}.target" # 2>/dev/null
     end
