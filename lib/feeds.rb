@@ -22,6 +22,9 @@ class Feeds
       { expiry: 700,   url: "https://gds.blog.gov.uk/feed/" },
       { expiry: 700,   url: "https://technology.blog.gov.uk/feed/" },
       { expiry: 86400, url: "http://rachelbythebay.com/w/atom.xml" },
+      { expiry: 43200, url: "http://tenderlovemaking.com/atom.xml" },
+      { expiry: 43200, url: "https://arogozhnikov.github.io/feed.xml" },
+      { expiry: 86400, url: "https://hookrace.net/blog/feed/" },
     ]
   end
 end
