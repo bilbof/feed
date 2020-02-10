@@ -1,5 +1,8 @@
 class Feeds
   def self.all
+    # 86400 = 24 hours
+    # 43200 = 12 hours
+    # 21600 = 6 hours
     [
       { expiry: 86400, url: "https://blogs.dropbox.com/tech/feed/" },
       { expiry: 86400, url: "https://deliveroo.engineering/feed" },
@@ -25,6 +28,7 @@ class Feeds
       { expiry: 43200, url: "http://tenderlovemaking.com/atom.xml" },
       { expiry: 43200, url: "https://arogozhnikov.github.io/feed.xml" },
       { expiry: 86400, url: "https://hookrace.net/blog/feed/" },
+      { expiry: 21600, url: "http://tholman.com/feed.xml" },
     ]
   end
 end
