@@ -29,6 +29,7 @@ class Feeds
       { expiry: 43200, url: "https://arogozhnikov.github.io/feed.xml" },
       { expiry: 86400, url: "https://hookrace.net/blog/feed/" },
       { expiry: 21600, url: "http://tholman.com/feed.xml" },
+      { expiry: 21600, url: "http://brooker.co.za/blog/rss.xml" },
     ]
   end
 end
