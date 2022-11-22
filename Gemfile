@@ -5,7 +5,7 @@ gem 'capistrano-bundler', '~> 1.6'
 gem "capistrano-foreman", "~> 1.4"
 gem 'capistrano-rbenv', '~> 2.1'
 gem "concurrent-ruby", require: "concurrent"
-gem "dalli", "~> 2.7"
+gem "dalli", "~> 3.2"
 gem "feedjira", "3.1.0"
 gem "foreman", "~> 0.87.0"
 gem "httparty", "0.17.3"
