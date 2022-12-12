@@ -12,7 +12,7 @@ gem "httparty", "0.17.3"
 gem "loofah", "~> 2.4"
 gem "rack-cache", "1.11.0"
 gem "rake", "~> 13.0"
-gem "sinatra", "2.0.7"
+gem "sinatra", "2.2.3"
 gem "thin", "~> 1.7"
 gem "whenever", "~> 1.0"
 
